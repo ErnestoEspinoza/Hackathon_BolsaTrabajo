@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web.Http;
 
-namespace Hackathon_BT
+namespace Hackathon
 {
     public static class WebApiConfig
     {

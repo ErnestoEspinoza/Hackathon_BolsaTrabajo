@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Hackathon_BT
+namespace Hackathon
 {
 
 

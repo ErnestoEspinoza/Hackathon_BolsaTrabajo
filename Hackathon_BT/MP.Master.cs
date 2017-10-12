@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace Hackathon_BT
+namespace Hackathon
 {
     public partial class MP : System.Web.UI.MasterPage
     {
