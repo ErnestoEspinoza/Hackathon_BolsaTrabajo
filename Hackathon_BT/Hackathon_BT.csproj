@@ -115,6 +115,7 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
+    <Content Include="Hackathon.DAO.csproj" />
     <Content Include="Login.aspx" />
     <Content Include="scripts\ai.0.22.9-build00167.js" />
     <Content Include="scripts\ai.0.22.9-build00167.min.js" />
@@ -174,11 +175,11 @@
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\..\Desktop\Hackathon.DAO\Hackathon.DAO.csproj">
+    <ProjectReference Include="..\Hackathon.DAO\Hackathon.DAO.csproj">
       <Project>{2a289394-6c92-412f-b553-f3ad6c9ff613}</Project>
       <Name>Hackathon.DAO</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\..\Desktop\Hackathon.STR\Hackathon.STR.csproj">
+    <ProjectReference Include="..\Hackathon.STR\Hackathon.STR.csproj">
       <Project>{808351f3-2144-4f07-be53-157dbcdec4f4}</Project>
       <Name>Hackathon.STR</Name>
     </ProjectReference>
