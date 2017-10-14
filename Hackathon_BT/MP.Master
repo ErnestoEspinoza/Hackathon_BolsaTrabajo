@@ -60,18 +60,16 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-        <h1 class="modal-title" id="myModalLabel">Registro</h1>
+        <h1 class="modal-title text-center" id="myModalLabel">Registro</h1>
       </div>
-      <div class="modal-body">
+
         <h2 class="text-center">Tipo de registro</h2>
-      </div>
+      
       <div class="modal-footer">
-              <div class="col-sm-6">    
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Empleado</button>
-              </div>
-              <div class="col-sm-6">    
-              <button type="button" class="btn btn-primary" >Reclutar</button>
-              </div>
+             <div class="col-md-12 text-center">    
+                    <button type="button" class="btn btn-danger" data-dismiss="modal" style="font-size: 20px;">Empleado</button>
+                   <button type="button" class="btn btn-danger" style="font-size: 20px;">Reclutar</button><br />
+             </div>
       </div>
     </div>
   </div>
@@ -88,12 +86,15 @@
         <h2 class="text-center">Iniciar Sesion</h2>
       </div>
       <div class="modal-footer">
-              <h2>Correo electronico</h2><br />
+              <h2 class="text-center">Correo electronico</h2><br />
               <input type="text" class="form-control" id="correo" placeholder="Correo Electronico"/><br />
-              <h2>Contraseña</h2>
+              <h2 class="text-center">Contraseña</h2>
               <input type="text" class="form-control" id="contraseña" placeholder="Contraseña"/><br />    
-              <br/>
-              <button type="button" class="btn btn-primary text-center" >Entrar</button>
+              <br />
+             <div class="col-md-12 text-center">    
+              <button type="button" class="btn btn-danger text-center" style="font-size: 20px;">Iniciar Sesion</button>
+              <button type="button" class="btn btn-danger text-center" style="font-size: 20px;">Registrarse</button>
+            </div>
               </div>
       </div>
 
