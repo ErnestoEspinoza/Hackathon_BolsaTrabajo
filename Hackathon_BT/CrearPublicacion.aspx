@@ -41,10 +41,15 @@
             
             <div class=" col-md-12 forms text-center" style="margin-bottom:10px;">
                 <button type="button" class="btn btn-info btn-circle btn-lg"><i class="glyphicon glyphicon-ok"></i></button>          
-                <button type="button" class="btn btn-danger btn-circle btn-lg"><i class="glyphicon glyphicon-remove"></i></button>
+                <button type="button" class="btn btn-danger btn-circle btn-lg" onclick="abrirInicio()" ><i class="glyphicon glyphicon-remove"></i></button>
             </div>
                 
         </div>
+        <script>
+            function abrirInicio() {
+                window.location.href = 'http://localhost:55153/inicio.aspx';
+            }
+        </script>
         <style>
             .MyContainer{
             margin: 0 auto;

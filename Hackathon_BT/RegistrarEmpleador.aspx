@@ -56,7 +56,7 @@
               <button type="button" class="btn btn-success">Crear cuenta</button>
           </div>
          <div class="col-md-12 text-center btn">
-              <button type="button" class="btn btn-danger">Regresar al inicio</button>
+              <button type="button" class="btn btn-danger" onclick="abrirInicio()">Regresar al inicio</button>
           </div>
       
     </div>
@@ -66,6 +66,11 @@
             </div>
         
     </div>
+    <script>
+            function abrirInicio() {
+                window.location.href = 'http://localhost:55153/inicio.aspx';
+            }
+        </script>
     <style>
             .MyContainer{
             margin: 0 auto;

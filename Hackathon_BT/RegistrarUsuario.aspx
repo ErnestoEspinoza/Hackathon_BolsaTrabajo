@@ -23,20 +23,25 @@
               <input type="text" class="form-control" id="apellidos" placeholder="Apellidos" />
           </div>
           <div class="form-group col-md-6 forms">
-                <label>Dirección:</label>
-                <input type="text" class="form-control" id="direccion" placeholder="Dirección" />
+                <label>Teléfono:</label>
+                <input type="text" class="form-control" id="telefono" placeholder="Teléfono" />
               </div>
           <div class="form-group col-md-6 forms">
               <label>Correo:</label>
               <input type="email" class="form-control" id="correo" placeholder="Correo" />
           </div>      
-          <div class="form-group col-md-6 forms">
-                <label>Teléfono:</label>
-                <input type="text" class="form-control" id="telefono" placeholder="Teléfono" />
+          <div class="form-group col-md-12 forms">
+                <label>Dirección:</label>
+                <input type="text" class="form-control" id="direccion" placeholder="Dirección" />
               </div>
+          
           <div class="form-group col-md-6 forms">
               <label>Contraseña:</label>
-              <input type="text" class="form-control" id="password" placeholder="Contraseña" />
+              <input type="text" class="form-control" id="password" placeholder="Ingrese Contraseña" />
+          </div>  
+          <div class="form-group col-md-6 forms">
+              <label>Contraseña:</label>
+              <input type="text" class="form-control" id="repassword" placeholder="Reingrese la Contraseña" />
           </div>  
           <div class="form-group col-md-6">
               <label>Sexo</label>
@@ -66,7 +71,7 @@
               <button type="button" class="btn btn-success">Crear cuenta</button>
           </div>
          <div class="col-md-12 text-center btn">
-              <button type="button" class="btn btn-danger">Regresar al inicio</button>
+              <button type="button" class="btn btn-danger" onclick="abrirInicio()">Regresar al inicio</button>
           </div>
       
     </div>
@@ -76,6 +81,11 @@
             </div>
         
     </div>
+    <script>
+            function abrirInicio() {
+                window.location.href = 'http://localhost:55153/inicio.aspx';
+            }
+        </script>
     <style>
             .MyContainer{
             margin: 0 auto;
