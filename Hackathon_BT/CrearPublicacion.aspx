@@ -39,7 +39,7 @@
                 <input type="text" class="form-control" id="etiquetas" placeholder="Palabras clave (Separadas por coma)"/>
             </div>
             
-            <div class=" col-md-12 forms text-center">
+            <div class=" col-md-12 forms text-center" style="margin-bottom:10px;">
                 <button type="button" class="btn btn-info btn-circle btn-lg"><i class="glyphicon glyphicon-ok"></i></button>          
                 <button type="button" class="btn btn-danger btn-circle btn-lg"><i class="glyphicon glyphicon-remove"></i></button>
             </div>
