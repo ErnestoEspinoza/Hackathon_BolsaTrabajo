@@ -62,9 +62,13 @@
              
                
           </div>
-          
-          
-      </div>
+          <div class="col-md-12 text-center btn">
+              <button type="button" class="btn btn-success">Crear cuenta</button>
+          </div>
+         <div class="col-md-12 text-center btn">
+              <button type="button" class="btn btn-danger">Regresar al inicio</button>
+          </div>
+      
     </div>
 
     
@@ -82,6 +86,9 @@
             }
             .MyContainer h1, h2, h3, h4{
                 text-align: center;
+            }
+            .btn{
+                margin-top: 5px;
             }
         </style>
     
