@@ -183,7 +183,7 @@
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\..\Desktop\Hackathon.DAO\Hackathon.DAO.csproj">
+    <ProjectReference Include="..\Hackathon.DAO\Hackathon.DAO.csproj">
       <Project>{2A289394-6C92-412F-B553-F3AD6C9FF613}</Project>
       <Name>Hackathon.DAO</Name>
     </ProjectReference>
