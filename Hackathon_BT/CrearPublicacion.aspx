@@ -3,20 +3,16 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     
-    <div class="container-fluid">
+    <div class="container-fluid text-center MyContainer">
         <h1>Crear publicación</h1>
         <div role="form">
-            <div class="form-group">
+            <div class="form-group col-sm-10">
                 <input type="text" class="form-control" id="asunto" placeholder="Asunto"/>
-            </div>
-            <div class="form-group">
-                <select class="form-control" id="puesto" required="required">
+                <select class="form-control col-sm-10" id="puesto" required="required">
                     <option value="puesto" disabled="disabled" selected="selected" hidden="hidden">Puesto</option>
                     <option value="cajero">Cajero</option>
                 </select>
-            </div>
-            <div class="form-group">
-                <textarea name="textarea" placeholder="Descripción y requerimientos" id="descripcion" style="width:250px;height:150px;"></textarea>
+                <textarea class="form-control col-xs-12" name="textarea" placeholder="Descripción y requerimientos" id="descripcion" style="width:250px;height:150px;"></textarea>
             </div>
             <div class="form-group">
                 <input type="text" class="form-control" id="sueldo" placeholder="Sueldo mensual"/>
@@ -31,21 +27,20 @@
             <div class="form-group">
                 <input type="text" class="form-control" id="etiquetas" placeholder="Palabras clave (Separadas por coma)"/>
             </div>
-            <div class="container">
+            
             <div class="col-sm-6">
                 <button type="button" class="btn btn-info btn-circle btn-sm"><i class="glyphicon glyphicon-ok"></i></button>          
-            </div>
-            <div class="col-sm-6">
                 <button type="button" class="btn btn-warning btn-circle btn-sm"><i class="glyphicon glyphicon-remove"></i></button>
             </div>
-                </div>
+                
         </div>
-
+        <style>
+            .MyContainer{
+            margin: 0 auto;
+    width: 75%;
+}
+        </style>
+        
     </div>
-    <style>
-        button {
-            margin: auto;
-            padding: 20px 20px;
-        }
-    </style>
+
 </asp:Content>
