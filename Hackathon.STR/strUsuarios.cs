@@ -14,17 +14,53 @@ namespace Hackathon.STR
             get { return iD; }
             set { iD = value; }
         }
-        string usuario;
-        public string Usuario
-        {
-            get {return usuario; }
-            set { usuario = value; }
-        }
         string contra;
         public string Contra
         {
-            get { return contra; }
+            get {return contra; }
             set { contra = value; }
+        }
+        string nombre;
+        public string Nombre
+        {
+            get { return nombre; }
+            set { nombre = value; }
+        }
+        string correo;
+        public string Correo
+        {
+            get { return correo; }
+            set { correo = value; }
+        }
+        DateTime fechan;
+        public DateTime FechaN
+        {
+            get { return fechan; }
+            set { fechan = value; }
+        }
+        string sexo;
+        public string Sexo
+        {
+            get { return sexo; }
+            set { sexo = value; }
+        }
+        string telefono;
+        public string Telefono
+        {
+            get { return telefono; }
+            set { telefono = value; }
+        }
+        string rfc;
+        public string RFC
+        {
+            get { return rfc; }
+            set { rfc = value; }
+        }
+        string usuario;
+        public string Usuario
+        {
+            get { return usuario; }
+            set { usuario = value; }
         }
         string tipoUsuario;
         public string TipoUsuario

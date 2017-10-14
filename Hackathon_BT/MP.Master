@@ -93,7 +93,6 @@
               <br />
              <div class="col-md-12 text-center">    
               <button type="button" class="btn btn-danger text-center" style="font-size: 20px;">Iniciar Sesion</button>
-              <button type="button" class="btn btn-danger text-center" style="font-size: 20px;">Registrarse</button>
             </div>
               </div>
       </div>

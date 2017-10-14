@@ -74,5 +74,11 @@ namespace Hackathon.STR
             get { return estado; }
             set { estado = value; }
         }
+        string categoria;
+        public string Categoria
+        {
+            get { return categoria; }
+            set { categoria = value; }
+        }
     }
 }

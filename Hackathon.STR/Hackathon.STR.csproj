@@ -45,6 +45,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="strCategorias.cs" />
     <Compile Include="strEmpleo.cs" />
     <Compile Include="strUsuarios.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
