@@ -25,7 +25,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-        <a href="#" class="navbar-brand"><img src="img/22532207_1641672515897070_1311949817_o.png" width="180" height="50" /></a>
+        <a href="http://localhost:55153/inicio.aspx" class="navbar-brand"><img src="img/22532207_1641672515897070_1311949817_o.png" width="180" height="50" /></a>
      </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -33,11 +33,11 @@
       <ul class="nav navbar-nav">
         <li class=""><a href="#">Contacto <span class="sr-only"></span></a></li>
         <li><a href="#">Ayuda</a></li>
-        <li><a href="#">Reclutar</a></li>
+        <li><a href="http://localhost:55153/CrearPublicacion.aspx">Reclutar</a></li>
         <li><a href="#">Categorías</a></li>
           <li><div class="navbar-form navbar-left">
         <div class="form-group">
-          <input type="text" class="form-control" placeholder="Search">
+          <input type="text" class="form-control" placeholder="Search"/>
         </div>
         <button type="submit" class="btn btn-default">Buscar</button>
 </div></li>
@@ -67,8 +67,8 @@
       
       <div class="modal-footer">
              <div class="col-md-12 text-center">    
-                    <button type="button" class="btn btn-danger" data-dismiss="modal" style="font-size: 20px;">Empleado</button>
-                   <button type="button" class="btn btn-danger" style="font-size: 20px;">Reclutar</button><br />
+                   <button type="button" class="btn btn-danger" data-dismiss="modal" style="font-size: 20px;" onclick="abrirEmpleado()">Empleado</button>
+                   <button type="button" class="btn btn-danger" style="font-size: 20px;" onclick="abrirEmpresa()">Empresa</button><br />
              </div>
       </div>
     </div>
@@ -105,6 +105,14 @@
     background-color: white;
 }
     </style>
+    <script>
+        function abrirEmpleado() {
+            window.location.href = 'http://localhost:55153/registrarUsuario.aspx';
+        }
+        function abrirEmpresa() {
+            window.location.href = 'http://localhost:55153/Registrarempleador.aspx';
+        }
+    </script>
 
 </body>
 </html>
