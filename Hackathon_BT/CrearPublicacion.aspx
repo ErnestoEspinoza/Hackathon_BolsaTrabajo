@@ -3,18 +3,16 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     
-    <div class="container-fluid">
+    <div class="container-fluid text-center MyContainer">
         <h1>Crear publicación</h1>
         <div role="form">
-            <div class="form-group col-xs-6">
+            <div class="form-group col-sm-10">
                 <input type="text" class="form-control" id="asunto" placeholder="Asunto"/>
-                <select class="form-control col-xs-6" id="puesto" required="required">
+                <select class="form-control col-sm-10" id="puesto" required="required">
                     <option value="puesto" disabled="disabled" selected="selected" hidden="hidden">Puesto</option>
                     <option value="cajero">Cajero</option>
                 </select>
-            </div>
-            <div class="form-group">
-                <textarea name="textarea" placeholder="Descripción y requerimientos" id="descripcion" style="width:250px;height:150px;"></textarea>
+                <textarea class="form-control col-xs-12" name="textarea" placeholder="Descripción y requerimientos" id="descripcion" style="width:250px;height:150px;"></textarea>
             </div>
             <div class="form-group">
                 <input type="text" class="form-control" id="sueldo" placeholder="Sueldo mensual"/>
@@ -36,7 +34,13 @@
             </div>
                 
         </div>
-
+        <style>
+            .MyContainer{
+            margin: 0 auto;
+    width: 75%;
+}
+        </style>
+        
     </div>
 
 </asp:Content>
