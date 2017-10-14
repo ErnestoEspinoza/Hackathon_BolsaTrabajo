@@ -24,16 +24,16 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand">AHOME JOBS</a>
-    </div>
+        <a href="#" class="navbar-brand"><img src="img/22532207_1641672515897070_1311949817_o.png" width="180" height="50" /></a>
+     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li class="active"><a>Contacto <span class="sr-only"></span></a></li>
-        <li><a>Ayuda</a></li>
-        <li><a>Reclutar</a></li>
-        <li><a>Categorías</a></li>
+        <li class=""><a href="#">Contacto <span class="sr-only"></span></a></li>
+        <li><a href="#">Ayuda</a></li>
+        <li><a href="#">Reclutar</a></li>
+        <li><a href="#">Categorías</a></li>
           <li><div class="navbar-form navbar-left">
         <div class="form-group">
           <input type="text" class="form-control" placeholder="Search">
@@ -98,5 +98,11 @@
 
   </div>
 </div>
+    <style>
+    .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    background-color: white;
+}
+    </style>
+
 </body>
 </html>

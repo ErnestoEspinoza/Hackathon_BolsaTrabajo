@@ -116,6 +116,8 @@
     <Content Include="CrearPublicacion.aspx" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
+    <Content Include="img\22522409_1641661312564857_1540079485_o.png" />
+    <Content Include="img\22532207_1641672515897070_1311949817_o.png" />
     <Content Include="img\img6.jpg" />
     <Content Include="img\logo-casa-ley-160.png" />
     <Content Include="inicio.aspx" />
