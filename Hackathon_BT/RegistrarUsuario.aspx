@@ -28,7 +28,7 @@
               </div>
           <div class="form-group col-md-6 forms">
               <label>Correo:</label>
-              <input type="text" class="form-control" id="correo" placeholder="Correo" />
+              <input type="email" class="form-control" id="correo" placeholder="Correo" />
           </div>      
           <div class="form-group col-md-6 forms">
                 <label>Teléfono:</label>
