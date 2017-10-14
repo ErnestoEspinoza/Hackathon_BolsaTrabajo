@@ -7,11 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Hackathon
+namespace Hackathon_BT
 {
 
 
-    public partial class Login
+    public partial class inicio
     {
     }
 }

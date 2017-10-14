@@ -115,8 +115,7 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
-    <Content Include="Hackathon.DAO.csproj" />
-    <Content Include="Inicio.aspx" />
+    <Content Include="inicio.aspx" />
     <Content Include="Login.aspx" />
     <Content Include="scripts\ai.0.22.9-build00167.js" />
     <Content Include="scripts\ai.0.22.9-build00167.min.js" />
@@ -130,9 +129,9 @@
     <Content Include="Content\bootstrap-theme.css.map" />
     <None Include="scripts\jquery-1.9.1.intellisense.js" />
     <Content Include="scripts\bootstrap.js" />
-    <Content Include="scripts\bootstrap.min.js" />
     <Content Include="scripts\jquery-1.9.1.js" />
     <Content Include="scripts\jquery-1.9.1.min.js" />
+    <Content Include="scripts\jquery.min.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -141,11 +140,12 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Inicio.aspx.cs">
-      <DependentUpon>Inicio.aspx</DependentUpon>
+    <Compile Include="inicio.aspx.cs">
+      <DependentUpon>inicio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Inicio.aspx.designer.cs">
-      <DependentUpon>Inicio.aspx</DependentUpon>
+    <Compile Include="inicio.aspx.designer.cs">
+      <DependentUpon>inicio.aspx</DependentUpon>
     </Compile>
     <Compile Include="Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
@@ -167,6 +167,7 @@
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
     </Content>
     <Content Include="MP.Master" />
     <Content Include="scripts\jquery-1.9.1.min.map" />
@@ -182,13 +183,9 @@
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Hackathon.DAO\Hackathon.DAO.csproj">
-      <Project>{2a289394-6c92-412f-b553-f3ad6c9ff613}</Project>
+    <ProjectReference Include="..\..\..\..\Desktop\Hackathon.DAO\Hackathon.DAO.csproj">
+      <Project>{2A289394-6C92-412F-B553-F3AD6C9FF613}</Project>
       <Name>Hackathon.DAO</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Hackathon.STR\Hackathon.STR.csproj">
-      <Project>{808351f3-2144-4f07-be53-157dbcdec4f4}</Project>
-      <Name>Hackathon.STR</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
