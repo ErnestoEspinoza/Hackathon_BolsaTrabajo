@@ -3,10 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Http;
-using Hackathon.STR;
 using Hackathon.DAO;
 
-namespace Hackathon_BT.Controllers
+namespace Hackathon.Controllers
 {
     public class LoginController
     {

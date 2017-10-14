@@ -1,1 +1,1 @@
-﻿<%@ Application Codebehind="Global.asax.cs" Inherits="Hackathon_BT.Global" Language="C#" %>
+﻿<%@ Application Codebehind="Global.asax.cs" Inherits="Hackathon.Global" Language="C#" %>

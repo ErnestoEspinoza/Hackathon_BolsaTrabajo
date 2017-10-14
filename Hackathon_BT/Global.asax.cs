@@ -7,7 +7,7 @@ using System.Web.Security;
 using System.Web.SessionState;
 using System.Web.Http;
 
-namespace Hackathon_BT
+namespace Hackathon
 {
     public class Global : HttpApplication
     {
