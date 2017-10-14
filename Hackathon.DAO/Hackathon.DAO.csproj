@@ -57,6 +57,12 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Hackathon.STR\Hackathon.STR.csproj">
+      <Project>{808351F3-2144-4F07-BE53-157DBCDEC4F4}</Project>
+      <Name>Hackathon.STR</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

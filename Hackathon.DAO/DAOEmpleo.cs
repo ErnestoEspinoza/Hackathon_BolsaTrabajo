@@ -1,4 +1,5 @@
-﻿using MySql.Data.MySqlClient;
+﻿using Hackathon.STR;
+using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -10,7 +11,7 @@ namespace Hackathon.DAO
 {
     public class DAOEmpleo
     {
-       /* private static DAOUsuarios instance;
+        private static DAOUsuarios instance;
         public static DAOUsuarios Instance()
         {
             if (instance == null) instance = new DAOUsuarios();
@@ -18,8 +19,11 @@ namespace Hackathon.DAO
         }
 
         MySqlConnection objConn = Conexion.Instancia.getConexion();
-        public List<strEmpleado> CargarEmpleos()
+        public List<strEmpleo> CargarEmpleos()
         {
+            List<strEmpleo> _lista = new List<strEmpleo>();
+            strEmpleo empleo = new strEmpleo();
+
             objConn = Conexion.Instancia.getConexion();
             MySqlCommand objCmd = new MySqlCommand("SP_ObtenerEmpleos", objConn);
             objCmd.CommandType = CommandType.StoredProcedure;
@@ -31,16 +35,21 @@ namespace Hackathon.DAO
                 MySqlDataReader reader = (objCmd.ExecuteReader());
                 if (reader.Read())
                 {
-                    usuario = reader["usuario"].ToString();
+                    empleo.Nombre = reader["nombre"].ToString();
+                    empleo.Descripcion = reader["descripcion"].ToString();
+                    empleo.Horario = reader["horario"].ToString();
+                    empleo.Sueldo = Convert.ToDecimal(reader["sueldo"]);
+                    empleo.Requerimientos = reader["requerimientos"].ToString();
                 }
                 else
                 {
                     
                 }
+                _lista.Add(empleo);
                 objConn.Close();
             }
             catch (MySqlException ex) { throw ex; }
-            return 
+            return _lista;
         }
-    */}
+    }
 }
