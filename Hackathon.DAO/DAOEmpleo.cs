@@ -19,37 +19,45 @@ namespace Hackathon.DAO
         }
 
         MySqlConnection objConn = Conexion.Instancia.getConexion();
-        public List<strEmpleo> CargarEmpleos()
+        public object Obtener_Todos()
         {
-            List<strEmpleo> _lista = new List<strEmpleo>();
-            strEmpleo empleo = new strEmpleo();
 
             objConn = Conexion.Instancia.getConexion();
             MySqlCommand objCmd = new MySqlCommand("SP_ObtenerEmpleos", objConn);
             objCmd.CommandType = CommandType.StoredProcedure;
+
+            List<strEmpleo> datos = new List<strEmpleo>();
             try
             {
                 if (objConn.State == ConnectionState.Open) objConn.Close();
                 objConn.Open();
+                datos = CargarListaStr(objCmd.ExecuteReader());
 
-                MySqlDataReader reader = (objCmd.ExecuteReader());
-                if (reader.Read())
-                {
-                    empleo.Nombre = reader["nombre"].ToString();
-                    empleo.Descripcion = reader["descripcion"].ToString();
-                    empleo.Horario = reader["horario"].ToString();
-                    empleo.Sueldo = Convert.ToDecimal(reader["sueldo"]);
-                    empleo.Requerimientos = reader["requerimientos"].ToString();
-                }
-                else
-                {
-                    
-                }
-                _lista.Add(empleo);
                 objConn.Close();
             }
             catch (MySqlException ex) { throw ex; }
-            return _lista;
+            return datos;
+        }
+
+        public List<strEmpleo> CargarListaStr(object obj)
+        {
+            MySqlDataReader lector = (obj as MySqlDataReader);
+            List<strEmpleo> lista = null;
+            while (lector.Read())
+            {
+                if (lista == null) lista = new List<strEmpleo>();
+                strEmpleo empleo = new strEmpleo();
+
+                empleo.Nombre = lector["Nombre"].ToString();
+                empleo.Descripcion = lector["Descripcion"].ToString();
+                empleo.Horario = lector["Horario"].ToString();
+                empleo.Requerimientos = lector["Requerimientos"].ToString();
+                empleo.Sueldo = decimal.Parse(lector["Sueldo"].ToString());
+
+                lista.Add(empleo);
+            }
+            lector.Close();
+            return lista;
         }
     }
 }

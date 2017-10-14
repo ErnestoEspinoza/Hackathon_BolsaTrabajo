@@ -7,11 +7,9 @@ using Hackathon.DAO;
 
 namespace Hackathon.Controllers
 {
-    public class LoginController
-    {
         [RoutePrefix("api/Usuarios")]
-        public class DatosController : ApiController
-        {
+    public class LoginController:ApiController
+    {
             [Route("Login")]
             public string Get(string usuario, string contra)
             {
@@ -20,4 +18,4 @@ namespace Hackathon.Controllers
             }
         }
     }
-}
+

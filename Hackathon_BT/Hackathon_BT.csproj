@@ -143,6 +143,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\EmpleosController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="CrearPublicacion.aspx.cs">
       <DependentUpon>CrearPublicacion.aspx</DependentUpon>
@@ -214,6 +215,10 @@
     <ProjectReference Include="..\Hackathon.DAO\Hackathon.DAO.csproj">
       <Project>{2A289394-6C92-412F-B553-F3AD6C9FF613}</Project>
       <Name>Hackathon.DAO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Hackathon.STR\Hackathon.STR.csproj">
+      <Project>{808351f3-2144-4f07-be53-157dbcdec4f4}</Project>
+      <Name>Hackathon.STR</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
