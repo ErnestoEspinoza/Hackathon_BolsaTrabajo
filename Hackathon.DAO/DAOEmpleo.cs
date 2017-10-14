@@ -1,20 +1,16 @@
-﻿using System;
-using System.Data;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using MySql.Data;
-using MySql.Data.MySqlClient;
 
 namespace Hackathon.DAO
 {
-    public class DAOUsuarios
+    public class DAOEmpleo
     {
-        /// <summary>
-        /// para ver si si se les manda alaverga pinches perros
-        /// </summary>
-        private static DAOUsuarios instance;
+       /* private static DAOUsuarios instance;
         public static DAOUsuarios Instance()
         {
             if (instance == null) instance = new DAOUsuarios();
@@ -22,14 +18,11 @@ namespace Hackathon.DAO
         }
 
         MySqlConnection objConn = Conexion.Instancia.getConexion();
-        public string Login(string usuario, string contra)
+        public List<strEmpleado> CargarEmpleos()
         {
             objConn = Conexion.Instancia.getConexion();
-            MySqlCommand objCmd = new MySqlCommand("SP_IniciarSesion", objConn);
-            objCmd.Parameters.AddWithValue("_usuario", usuario);
-            objCmd.Parameters.AddWithValue("_contra", contra);
-            objCmd.CommandType =CommandType.StoredProcedure;
-            string contraseña;
+            MySqlCommand objCmd = new MySqlCommand("SP_ObtenerEmpleos", objConn);
+            objCmd.CommandType = CommandType.StoredProcedure;
             try
             {
                 if (objConn.State == ConnectionState.Open) objConn.Close();
@@ -42,12 +35,12 @@ namespace Hackathon.DAO
                 }
                 else
                 {
-                    contraseña = "error";
+                    
                 }
                 objConn.Close();
             }
             catch (MySqlException ex) { throw ex; }
-            return usuario;
+            return 
         }
-    }
+    */}
 }
