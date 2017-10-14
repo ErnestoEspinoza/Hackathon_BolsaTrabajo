@@ -6,12 +6,12 @@
         <div class="w3-container">
   <h2>Registra tu empresa</h2>
 
-  <div class="w3-card-5" style="width:100%;">
-    <header class="w3-container w3-red">
-      <h4>Datos de contacto</h4>
-    </header>
+  <div class="w3-card-5">
+  
+      <h4 class="alert alert-success">Datos de contacto</h4>
+    
 
-    <div class="w3-container">
+    <div class="container">
       <div role="form">
           <div class="form-group col-md-6 forms">
               <label>Nombre:</label>
@@ -40,7 +40,7 @@
           
           <div class="form-group col-md-6 forms">
               <label>RFC:</label>
-                <input type="text" class="form-control" id="rfc" placeholder="RFC" />
+                <input type="text" class="form-control" id="rfc" placeholder="Registro Federal de Contribuyentes" />
               </div>
           <div class="form-group col-md-6 forms">
               <label>Nombre de la empresa:</label>
@@ -74,7 +74,6 @@
     <style>
             .MyContainer{
             margin: 0 auto;
-    width: 75%;
 }
             .forms{
                 margin-top: 20px;
