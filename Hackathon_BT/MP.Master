@@ -37,9 +37,17 @@
 
       </ul>
       <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown" id="navpaja" style="display:none;">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pajaman <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Perfil</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="http://localhost:55153/inicio.aspx">Salir</a></li>
+          </ul>
+        </li>
         <li><button class="btn btn-default navbar-btn" data-toggle="modal" data-target="#basicModal2" id="entrar"><span class="glyphicon glyphicon-log-in"></span> Entrar</button></li>
         <li><button class="btn btn-default navbar-btn" data-toggle="modal" data-target="#basicModal"  id="crearcuenta"><span class="glyphicon glyphicon-user"></span>  Crear cuenta</button></li>
-      </ul>
+           </ul>
     </div>
   </div>
 </nav>
@@ -109,18 +117,16 @@
             var us = document.getElementById("correo").value;
             var ct = document.getElementById("contraseña").value;
             var urlDatos = "/api/Usuarios/Login?correo=" + us + "&contra=" + ct;
-            console.log(us);
             $.getJSON(urlDatos, function (a) {
-                alert(a);
                 if (a != null) {
                     $('#entrar').hide();
                     $('#crearcuenta').hide();
-
+                    $('#navpaja').show();
                 }
             });
             $('#basicModal2').modal('hide');
             }
-
+       
 
 
     </script>

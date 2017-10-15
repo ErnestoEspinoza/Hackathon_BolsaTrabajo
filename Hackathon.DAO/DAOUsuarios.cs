@@ -22,10 +22,12 @@ namespace Hackathon.DAO
         }
 
         MySqlConnection objConn = Conexion.Instancia.getConexion();
+        private string nombre;
+
         public string Login(string correo, string contra)
         {
             objConn = Conexion.Instancia.getConexion();
-            MySqlCommand objCmd = new MySqlCommand("SP_IniciarSesion", objConn);
+            MySqlCommand objCmd = new MySqlCommand("Login", objConn);
             objCmd.Parameters.AddWithValue("_correo", correo);
             objCmd.Parameters.AddWithValue("_contra", contra);
             objCmd.CommandType =CommandType.StoredProcedure;
@@ -38,7 +40,7 @@ namespace Hackathon.DAO
                 MySqlDataReader reader = (objCmd.ExecuteReader());
                 if (reader.Read())
                 {
-                    usuario = reader["correo"].ToString();
+                    nombre = reader["nombre"].ToString();
                 }
                 else
                 {
@@ -47,7 +49,7 @@ namespace Hackathon.DAO
                 objConn.Close();
             }
             catch (MySqlException ex) { throw ex; }
-            return correo;
+            return nombre;
         }
         public string registrarEmpleado(string nombre, string contra, string correo, DateTime fechaNacimiento, string sexo, string telefono)
         {
@@ -78,7 +80,7 @@ namespace Hackathon.DAO
                 objConn.Close();
             }
             catch (MySqlException ex) { throw ex; }
-            return 0;
+            return "0";
         }
     }
 }
