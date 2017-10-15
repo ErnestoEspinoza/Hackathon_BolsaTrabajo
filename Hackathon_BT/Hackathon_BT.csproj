@@ -122,7 +122,6 @@
     <Content Include="img\img6.jpg" />
     <Content Include="img\logo-casa-ley-160.png" />
     <Content Include="inicio.aspx" />
-    <Content Include="Login.aspx" />
     <Content Include="Perfil.aspx" />
     <Content Include="RegistrarEmpleador.aspx" />
     <Content Include="RegistrarUsuario.aspx" />
@@ -163,13 +162,6 @@
     </Compile>
     <Compile Include="inicio.aspx.designer.cs">
       <DependentUpon>inicio.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Login.aspx.cs">
-      <DependentUpon>Login.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Login.aspx.designer.cs">
-      <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
     <Compile Include="MP.Master.cs">
       <DependentUpon>MP.Master</DependentUpon>

@@ -89,12 +89,13 @@
               <h2 class="text-center">Correo electronico</h2><br />
               <input type="text" class="form-control" id="correo" placeholder="Correo Electronico"/><br />
               <h2 class="text-center">Contraseña</h2>
-              <input type="text" class="form-control" id="contraseña" placeholder="Contraseña"/><br />    
+              <input type="password" class="form-control" id="contraseña" placeholder="Contraseña"/><br />    
               <br />
              <div class="col-md-12 text-center">    
-              <button type="button" class="btn btn-danger text-center" style="font-size: 20px;">Iniciar Sesion</button>
+              <button type="button" class="btn btn-danger text-center" style="font-size: 20px;" onclick="IniciaSesion()">Iniciar Sesion</button>
             </div>
               </div>
+
       </div>
 
   </div>
@@ -110,6 +111,11 @@
         }
         function abrirEmpresa() {
             window.location.href = 'http://localhost:55153/Registrarempleador.aspx';
+        }
+        function IniciaSesion() {
+            var us = document.getElementById("correo").value;
+            var ct = document.getElementById("contraseña").value;
+            window.location.href = "/api/Usuarios/Login?correo=" + us + "&contra=" + ct;
         }
     </script>
 
