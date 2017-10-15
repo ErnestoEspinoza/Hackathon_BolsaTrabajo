@@ -22,11 +22,14 @@ namespace Hackathon.DAO
         }
 
         MySqlConnection objConn = Conexion.Instancia.getConexion();
-        public string Login(string usuario, string contra)
+
+        public string paja1 { get; private set; }
+
+        public string Login(string correo, string contra)
         {
             objConn = Conexion.Instancia.getConexion();
-            MySqlCommand objCmd = new MySqlCommand("SP_IniciarSesion", objConn);
-            objCmd.Parameters.AddWithValue("_usuario", usuario);
+            MySqlCommand objCmd = new MySqlCommand("Login", objConn);
+            objCmd.Parameters.AddWithValue("_correo", correo);
             objCmd.Parameters.AddWithValue("_contra", contra);
             objCmd.CommandType =CommandType.StoredProcedure;
             string contraseña;
@@ -38,7 +41,7 @@ namespace Hackathon.DAO
                 MySqlDataReader reader = (objCmd.ExecuteReader());
                 if (reader.Read())
                 {
-                    usuario = reader["usuario"].ToString();
+                    paja1 = reader["nombre"].ToString();
                 }
                 else
                 {
@@ -47,7 +50,7 @@ namespace Hackathon.DAO
                 objConn.Close();
             }
             catch (MySqlException ex) { throw ex; }
-            return usuario;
+            return paja1;
         }
     }
 }

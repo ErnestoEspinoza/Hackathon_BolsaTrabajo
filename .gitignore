@@ -240,3 +240,5 @@ ModelManifest.xml
 
 # FAKE - F# Make
 .fake/
+/Hackathon_BT/scripts
+/Hackathon_BT/Content
