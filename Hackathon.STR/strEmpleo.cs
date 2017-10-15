@@ -8,6 +8,12 @@ namespace Hackathon.STR
 {
    public class strEmpleo
     {
+        string Logo;
+        public string logo
+        {
+            get { return Logo; }
+            set { Logo = value; }
+        }
         int iD;
         public int ID
         {
