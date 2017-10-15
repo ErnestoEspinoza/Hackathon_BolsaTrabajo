@@ -76,10 +76,10 @@
  
                     <div class="col-12">
                       
-                        <div class="col-lg-4 col col-sm-12"><img class="img-thumbnail" src="/DIRECCION-IMAGEN" alt="LOGO EMPRESA"></div>
+                        <div class="col-lg-4 col col-sm-12"><img class="img-thumbnail" src="img/logo-casa-ley-160.png" alt="LOGO EMPRESA"></div>
                         <div class="col-lg-4 col-sm-12">
-                            <h4 class="text-center">NOMBRE DE EMPRESA</h4>
-                            <p>Descripcion:</p>
+                            <h4 class="text-center">LEY</h4>
+                            <p>Puesto:</p>
                             <p>Horario:</p>
                             <p>Salario Mensual:</p>
                         </div>
@@ -91,9 +91,63 @@
                         <input type="button" class="col-lg-2 col-sm-12 btn btn-info" value="Agregar a intereses">
                         <input type="button" class="col-lg-2 col-sm-12 btn btn-default" value="Contacto">
                     </div>
+
                 </div>
+
             </div>
+                        <div class="row">
+                
+                <div class="Elemento">
+ 
+                    <div class="col-12">
+                      
+                        <div class="col-lg-4 col col-sm-12"><img style="width:170px; height:170px;" class="img-thumbnail" src="img/walmart.png" alt="LOGO EMPRESA"></div>
+                        <div class="col-lg-4 col-sm-12">
+                            <h4 class="text-center">WALMART</h4>
+                            <p>Puesto:</p>
+                            <p>Horario:</p>
+                            <p>Salario Mensual:</p>
+                        </div>
+                        <div class="col-lg-4 col-sm-12">
+                                <h4 class="text-center">REQUERIMIENTOS</h4>
+                                <p>Estudios:</p>
+                                <p>Experiencia:</p>
+                        </div>
+                        <input type="button" class="col-lg-2 col-sm-12 btn btn-info" value="Agregar a intereses">
+                        <input type="button" class="col-lg-2 col-sm-12 btn btn-default" value="Contacto">
+                    </div>
+
+                </div>
+
+            </div>
+                        <div class="row">
+                
+                <div class="Elemento">
+ 
+                    <div class="col-12">
+                      
+                        <div class="col-lg-4 col col-sm-12"><img style="width:170px; height:170px;" class="img-thumbnail" src="img/descarga.png" alt="LOGO EMPRESA"></div>
+                        <div class="col-lg-4 col-sm-12">
+                            <h4 class="text-center">OXXO</h4>
+                            <p>Puesto:</p>
+                            <p>Horario:</p>
+                            <p>Salario Mensual:</p>
+                        </div>
+                        <div class="col-lg-4 col-sm-12">
+                                <h4 class="text-center">REQUERIMIENTOS</h4>
+                                <p>Estudios:</p>
+                                <p>Experiencia:</p>
+                        </div>
+                        <input type="button" class="col-lg-2 col-sm-12 btn btn-info" value="Agregar a intereses">
+                        <input type="button" class="col-lg-2 col-sm-12 btn btn-default" value="Contacto">
+                    </div>
+
+                </div>
+
+            </div>
+
         </div>
+
 
 
 

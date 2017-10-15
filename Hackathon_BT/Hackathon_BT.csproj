@@ -109,6 +109,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Ayuda.aspx" />
+    <Content Include="Contacto.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -119,9 +121,12 @@
     <Content Include="img\22522409_1641661312564857_1540079485_o.png" />
     <Content Include="img\22532207_1641672515897070_1311949817_o.png" />
     <Content Include="img\AhomeTrabaja.svg" />
+    <Content Include="img\descarga.png" />
     <Content Include="img\img6.jpg" />
     <Content Include="img\logo-casa-ley-160.png" />
+    <Content Include="img\walmart.png" />
     <Content Include="inicio.aspx" />
+    <Content Include="MisPublicaciones.aspx" />
     <Content Include="Perfil.aspx" />
     <Content Include="RegistrarEmpleador.aspx" />
     <Content Include="RegistrarUsuario.aspx" />
@@ -144,6 +149,20 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Ayuda.aspx.cs">
+      <DependentUpon>Ayuda.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ayuda.aspx.designer.cs">
+      <DependentUpon>Ayuda.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contacto.aspx.cs">
+      <DependentUpon>Contacto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contacto.aspx.designer.cs">
+      <DependentUpon>Contacto.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Controllers\EmpleosController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="CrearPublicacion.aspx.cs">
@@ -162,6 +181,13 @@
     </Compile>
     <Compile Include="inicio.aspx.designer.cs">
       <DependentUpon>inicio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MisPublicaciones.aspx.cs">
+      <DependentUpon>MisPublicaciones.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MisPublicaciones.aspx.designer.cs">
+      <DependentUpon>MisPublicaciones.aspx</DependentUpon>
     </Compile>
     <Compile Include="MP.Master.cs">
       <DependentUpon>MP.Master</DependentUpon>
