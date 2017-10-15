@@ -105,6 +105,23 @@
         function abrirEmpresa() {
             window.location.href = 'http://localhost:55153/Registrarempleador.aspx';
         }
+        function IniciaSesion() {
+            var us = document.getElementById("correo").value;
+            var ct = document.getElementById("contraseña").value;
+            var urlDatos = "/api/Usuarios/Login?correo=" + us + "&contra=" + ct;
+            console.log(us);
+            $.getJSON(urlDatos, function (a) {
+                alert(a);
+                if (a != null) {
+                    $('#entrar').hide();
+                    $('#crearcuenta').hide();
+
+                }
+            });
+            $('#basicModal2').modal('hide');
+            }
+
+
 
     </script>
       <script data-require="jquery@*" data-semver="2.1.3" src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
