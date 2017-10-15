@@ -47,7 +47,7 @@ namespace Hackathon.DAO
             {
                 if (lista == null) lista = new List<strEmpleo>();
                 strEmpleo empleo = new strEmpleo();
-
+                empleo.logo = lector["logo"].ToString();
                 empleo.Nombre = lector["Nombre"].ToString();
                 empleo.Descripcion = lector["Descripcion"].ToString();
                 empleo.Horario = lector["Horario"].ToString();
