@@ -30,17 +30,24 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav text-center">
-        <li class=""><a href="#">Contacto <span class="sr-only"></span></a></li>
-        <li><a href="#">Ayuda</a></li>
+        <li class=""><a href="http://localhost:55153/Contacto.aspx">Acerca de <span class="sr-only"></span></a></li>
         <li><a href="http://localhost:55153/CrearPublicacion.aspx">Reclutar</a></li>
-        <li><a href="#">Categorías</a></li>
-
+          <li class="dropdown" id="navpaja2">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Categorias <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Tecnologias</a></li>
+            <li><a href="#">Mercadotecnia</a></li>
+            <li><a href="#">Electronica</a></li>
+            <li><a href="#">Ciencias</a></li>
+            <li><a href="#">Administración</a></li>
+          </ul>
+        </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li class="dropdown" id="navpaja" style="display:none;">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pajaman <span class="caret"></span></a>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Ernesto Espinoza <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="#">Perfil</a></li>
+            <li><a href="http://localhost:55153/perfil.aspx">Perfil</a></li>
             <li role="separator" class="divider"></li>
             <li><a href="http://localhost:55153/inicio.aspx">Salir</a></li>
           </ul>
@@ -61,9 +68,11 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-        <h1 class="modal-title text-center" id="myModalLabel">Registro</h1>
+        <h1 class="modal-title text-center" id="myModalLabel">Crear Cuenta</h1>
       </div>
-
+        <div class="modal-body" style="text-align:center">
+          <img src="img/add-user.png" style="width:25%; height:25%;"/>
+      </div>
         <h2 class="text-center">Tipo de registro</h2>
       
       <div class="modal-footer">
@@ -81,17 +90,17 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-        <h1 class="modal-title" id="myModalLabel2">Entrar</h1>
+        <h1 class="modal-title" id="myModalLabel2">Iniciar Sesion</h1>
       </div>
-      <div class="modal-body">
-        <h2 class="text-center">Iniciar Sesion</h2>
+      <div class="modal-body" style="text-align:center">
+          <img src="img/User_Avatar-512.png" style="width:25%; height:25%;"/>
       </div>
       <div class="modal-footer">
-              <h2 class="text-center">Correo electronico</h2><br />
+              <h3 class="text-center">Correo electronico</h3><br />
               <input type="text" class="form-control" id="correo" placeholder="Correo Electronico"/><br />
-              <h2 class="text-center">Contraseña</h2>
+              <h3 class="text-center">Contraseña</h3>
               <input type="password" class="form-control" id="contraseña" placeholder="Contraseña"/><br />    
-              <br />
+          
              <div class="col-md-12 text-center">    
               <button type="button" class="btn btn-danger text-center" style="font-size: 20px;" onclick="IniciaSesion()">Iniciar Sesion</button>
             </div>
@@ -125,6 +134,7 @@
                 }
             });
             $('#basicModal2').modal('hide');
+
             }
        
 
