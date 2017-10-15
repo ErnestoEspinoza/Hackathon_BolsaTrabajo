@@ -22,11 +22,11 @@ namespace Hackathon.DAO
         }
 
         MySqlConnection objConn = Conexion.Instancia.getConexion();
-        public string Login(string usuario, string contra)
+        public string Login(string correo, string contra)
         {
             objConn = Conexion.Instancia.getConexion();
             MySqlCommand objCmd = new MySqlCommand("SP_IniciarSesion", objConn);
-            objCmd.Parameters.AddWithValue("_usuario", usuario);
+            objCmd.Parameters.AddWithValue("_correo", correo);
             objCmd.Parameters.AddWithValue("_contra", contra);
             objCmd.CommandType =CommandType.StoredProcedure;
             string contraseña;
@@ -38,7 +38,7 @@ namespace Hackathon.DAO
                 MySqlDataReader reader = (objCmd.ExecuteReader());
                 if (reader.Read())
                 {
-                    usuario = reader["usuario"].ToString();
+                    usuario = reader["correo"].ToString();
                 }
                 else
                 {
@@ -47,7 +47,38 @@ namespace Hackathon.DAO
                 objConn.Close();
             }
             catch (MySqlException ex) { throw ex; }
-            return usuario;
+            return correo;
+        }
+        public string registrarEmpleado(string nombre, string contra, string correo, DateTime fechaNacimiento, string sexo, string telefono)
+        {
+            objConn = Conexion.Instancia.getConexion();
+            MySqlCommand objCmd = new MySqlCommand("SP_RegistrarTrabajador", objConn);
+            objCmd.Parameters.AddWithValue("_nombre", nombre);
+            objCmd.Parameters.AddWithValue("_contra", contra);
+            objCmd.Parameters.AddWithValue("_FechaN", fechaNacimiento);
+            objCmd.Parameters.AddWithValue("_Sexo", sexo);
+            objCmd.Parameters.AddWithValue("_telefono", telefono);
+            objCmd.Parameters.AddWithValue("_correo", correo);
+            objCmd.CommandType = CommandType.StoredProcedure;
+            string contraseña;
+            try
+            {
+                if (objConn.State == ConnectionState.Open) objConn.Close();
+                objConn.Open();
+
+                MySqlDataReader reader = (objCmd.ExecuteReader());
+                if (reader.Read())
+                {
+                  
+                }
+                else
+                {
+                    contraseña = "error";
+                }
+                objConn.Close();
+            }
+            catch (MySqlException ex) { throw ex; }
+            return 0;
         }
     }
 }
